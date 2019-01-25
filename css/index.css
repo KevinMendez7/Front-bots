@@ -1,0 +1,50 @@
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
+html, body {
+  background: -webkit-linear-gradient(330deg, #000, #f0a6ca);
+  background: linear-gradient(120deg, #000, #f0a6ca);
+  overflow: hidden;
+}
+
+
+
+#welcome-title {
+  padding-top: 2%;
+}
+/* .mx-auto {
+  text-align: center;
+} */
+
+.btn-bot {
+  /* background: -moz-linear-gradient(top, rgba(203,96,179,1) 0%, rgba(84,13,119,1) 51%, rgba(222,71,172,1) 100%); FF3.6-15 */
+  background-color: rgb(93, 17, 112); /* Chrome10-25,Safari5.1-6 */
+  /* background: linear-gradient(to bottom, rgba(203,96,179,1) 0%,rgba(84,13,119,1) 51%,rgba(222,71,172,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); IE6-9 */
+  color: white;
+  /* width: 70%;  */
+}
+
+.btn-bot:hover {
+  background-color:rgb(95, 56, 116);
+}
+
+#welcome-bot img {
+  height: 60%;
+  width: 60%;
+  /* object-fit: cover; */
+  /* filter: grayscale(70%); */
+}
+
+.mx-auto {
+  color: white;
+}
+
+.input-group-text img {
+  height: 15%;
+  width: 15%;
+  /* object-fit: cover; */
+}
+
+#info {
+  color: white;
+  padding-bottom: 2%;
+}

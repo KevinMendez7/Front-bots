@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Planet Bot</title>
+  </head>
+  <body id="gradient">
+    <div class="container">
+      <div class="row" id="welcome-title">
+        <div class="col">
+          <h1 class='mx-auto text-center'>Bienvenido!</h2>
+        </div>
+      </div>
+      <div class="col text-center" id="welcome-bot">
+        <img src="./assets/welcome-bot2.gif" class="img-fluid" alt="Responsive image" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Identificate</button> -->
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-bot" id="identify-button" data-toggle="modal" data-target="#identify">Identificate</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="identify" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Identificate para loguearte</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="chat-room.html" method="GET" id="form1">
+                <div class="row">
+                  <div class="form-group col">
+                    <div class="input-group mb-3">
+                        <input id="user_id" type="number" name="Id" placeholder="Id" aria-label="Username" aria-describedby="basic-addon1" required>
+                        <br>
+                        <input id="username-id" type="text" name="User" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+                      </div>
+                    </div>
+                  </div>
+                    <div>
+                    <input id="general" type='checkbox' name='room' value='general' />
+                    <label for="general">atencion general</label>
+                    </div>
+                    <div>
+                    <input id="Seguridad" type='checkbox' name='room' value='Seguridad' />
+                    <label for="Seguridad">Seguridad</label>
+                    </div>
+                    <div>
+                    <input id="Mantenimientos" type='checkbox' name='room' value='Mantenimientos' />
+                    <label for="Mantenimientos">Mantenimientos</label>
+                    </div>
+                    <div>
+                    <input id="Existencias y ventas" type='checkbox' name='room' value='Existencias y ventas' />
+                    <label for="Existencias y ventas">Existencias y ventas</label>
+                    </div>
+                    <div>
+                    <input id="Pedidos" type='checkbox' name='room' value='Pedidos' />
+                    <label for="Pedidos">Pedidos</label>
+                    </div>
+                    <div>
+                    <input id="Precios" type='checkbox' name='room' value='Precios' />
+                    <label for="Precios">Precios</label>
+                    </div>
+                    <div>
+                    <input id="Creditos" type='checkbox' name='room' value='Creditos' />
+                    <label for="Creditos">Creditos</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button id="cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button id="button" type="submit" form="form1" class="btn btn-bot">Entrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
